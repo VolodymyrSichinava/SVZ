@@ -1,0 +1,19 @@
+.transition {
+  position: absolute;
+  top: -200vh;
+  z-index: 100;
+  width: 100%;
+  height: 200vh;
+}
+
+.transitionSlide1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #2b2a2a;
+}
+
+.transitionSlide2 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(15, 15, 15);
+}

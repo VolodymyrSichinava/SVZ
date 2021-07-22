@@ -1,0 +1,166 @@
+.home {
+  display: flex;
+  height: 100vh;
+  background-color: #111; }
+  .home-photo {
+    width: 900px; }
+    .home-photo__background {
+      position: fixed;
+      left: -83%;
+      top: -50%;
+      z-index: 0;
+      width: 100%;
+      height: 200%;
+      background-color: #ffb400;
+      transform: rotate(-15deg); }
+    .home-photo__photo {
+      position: relative;
+      left: 35px;
+      top: 30px;
+      z-index: 100;
+      border-radius: 15px;
+      height: calc(100vh - 60px);
+      box-shadow: 0 0 9px black;
+      background-position: top;
+      background-size: cover;
+      background-repeat: no-repeat; }
+  .home-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #eee; }
+    .home-information .hello {
+      margin-bottom: 20px; }
+    .home-information .name {
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 45px; }
+    .home-information #name {
+      display: inline-block;
+      overflow: hidden;
+      margin-bottom: -5px;
+      width: 400px;
+      font-weight: 700;
+      white-space: nowrap;
+      text-overflow: clip;
+      color: #ffb400; }
+    .home-information .description {
+      margin-bottom: 30px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px; }
+    .home-information__link {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      border-radius: 20px;
+      padding: 14px 0;
+      width: 240px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background-color: #ffb400; }
+      .home-information__link::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1.5em;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.6);
+        transform: translateX(-4em) skewX(-45deg); }
+      .home-information__link:hover::before {
+        -webkit-animation: move-light 0.5s;
+        animation: move-light 0.5s; }
+
+@-webkit-keyframes move-light {
+  from {
+    transform: translateX(0) skewX(-45deg); }
+  to {
+    transform: translateX(250px) skewX(-45deg); } }
+
+@keyframes move-light {
+  from {
+    transform: translateX(0) skewX(-45deg); }
+  to {
+    transform: translateX(250px) skewX(-45deg); } }
+  .home .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 20px;
+    width: 15%; }
+    .home .nav a {
+      position: relative;
+      z-index: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 15px 0;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      color: #eee;
+      background-color: #2b2a2a;
+      transition: all 0.3s; }
+      .home .nav a p {
+        position: absolute;
+        right: -10px;
+        z-index: -1;
+        border-radius: 30px;
+        padding: 16px 60px 16px 30px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        white-space: nowrap;
+        opacity: 0;
+        transition: all 0.3s; }
+      .home .nav a:hover {
+        background-color: #ffb400;
+        transition: all 0.3s; }
+      .home .nav a:hover p {
+        right: 8px;
+        background-color: #ffb400;
+        opacity: 1;
+        transition: all 0.3s; }
+
+.about img {
+  width: 40vw;
+  transform: translateX(75%) translateY(10%); }
+
+.portfolio img {
+  width: 40vw;
+  transform: translateX(75%) translateY(10%); }
+
+.contact img {
+  width: 40vw;
+  transform: translateX(75%) translateY(10%); }
+
+.transition {
+  position: absolute;
+  top: -200vh;
+  z-index: 100;
+  width: 100%;
+  height: 200vh; }
+
+.transitionSlide1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #2b2a2a; }
+
+.transitionSlide2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #0f0f0f; }
+
+html {
+  overflow-y: hidden; }
+
+/*# sourceMappingURL=main.css.map */
