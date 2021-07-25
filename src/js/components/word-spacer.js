@@ -1,7 +1,7 @@
 let name = document.getElementById('name');
 let nameArray = ['Volodymyr Sichinava', 'Markup Developer'];
 
-function intervalToMin1() {                           //для удаления 'Volodymyr Sichinava'
+function intervalToMin1() {                        //для удаления 'Volodymyr Sichinava'
   name.innerHTML = nameArray[0];
   let nameWidthMin = 480;
   let intervalMin = setInterval(() => {
@@ -56,3 +56,6 @@ function intervalToMax4() {
     }
   }, 5);
 }
+
+
+window.addEventListener('load', intervalToMin1());

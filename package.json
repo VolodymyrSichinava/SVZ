@@ -12,6 +12,7 @@
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "babel-loader": "^8.2.2",
+    "barba.js": "^1.0.0",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
@@ -36,5 +37,8 @@
     "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.18.0"
+  },
+  "dependencies": {
+    "@barba/core": "^2.9.7"
   }
 }

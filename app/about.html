@@ -12,16 +12,20 @@
   <link rel="stylesheet" href="css/vendor.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-	<section class="about">
+<body data-barba="wrapper">
+	<section class="load-container">
+  <section class="loading-screen"></section>
+</section>
+
+	<main data-barba="container" data-barba-namespace='about-section'>
+		<section class="about">
   <img src="https://static.wixstatic.com/media/af5be9_76e247c77dba4a26ac4cc78d90ba89e7~mv2.png/v1/fill/w_560,h_420,al_c,q_85,usm_0.66_1.00_0.01/в%20разработке.webp" alt="">
 </section>
 
-	<section class="transition" id="transition">
-  <div class="transitionSlide1"></div>
-  <div class="transitionSlide2"></div>
-</section>
-
+	</main>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 	<script src="https://kit.fontawesome.com/a1a9834b37.js" crossorigin="anonymous"></script>
   <script src="js/vendor.js"></script>
 	<script src="js/main.js"></script>
